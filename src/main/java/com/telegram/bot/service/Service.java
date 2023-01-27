@@ -41,7 +41,6 @@ public class Service extends TelegramLongPollingBot {
             chatId = update.getMessage().getChatId();
             userName = update.getMessage().getFrom().getFirstName();
 
-            receivedMessage = update.getMessage().getText();
             receivedMessage = update.getMessage().getText(); // в эту переменную текст входящего сообщения
 
             botAnswerUtils(receivedMessage, chatId, userName);
